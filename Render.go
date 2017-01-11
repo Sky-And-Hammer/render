@@ -24,7 +24,7 @@ func New(viewPaths ...string) *Render {
 
 //  'Layout' set Layout for template
 func (render *Render) Layout(name string) *Template {
-	return &Template(render: render, layout: name)
+	return &Template{render: render, layout: name}
 }
 
 //  'Funcs' set helper functions for template with defualt 'application' layout
